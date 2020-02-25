@@ -78,6 +78,10 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 p {
   font-size: 1.4rem;
 }
@@ -211,6 +215,16 @@ main > section {
   padding: 70px 0;
 }
 
+.section_bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
 #story {
   display: flex;
 }
@@ -237,18 +251,11 @@ main > section {
   position: relative;
   padding: 200px;
 }
-#watch .watch_bg {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -50vw;
-  width: 100vw;
-  height: 100%;
+#watch .section_bg {
   background: url('../img/bgk-middle.png') #3d2f62 no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
 }
 #watch p {
   font-weight: 700;
@@ -303,4 +310,60 @@ main > section {
 }
 #expertise_list li:nth-of-type(-n+3) {
   border-bottom: 1px solid #ebebeb;
+}
+
+#team {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+#team .section_bg {
+  background: url('../img/bgk-header.png') #3d2f62 no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#team ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 45px auto 70px;
+}
+#team ul li {
+  margin: 0 10px;
+  width: calc(25% - 20px);
+  border: 1px solid #f4f4f6;
+}
+#team .portrait {
+  height: 230px;
+  background: #f4f4f6;
+}
+#team h2 {
+  color: #fff;
+}
+
+#team h2 + p {
+  font-family: 'serif';
+}
+#team h2 + p::after {
+  content: '';
+  display: block;
+  margin: 20px auto 0;
+  width: 50px;
+  height: 2px;
+  background: #c6c4c9;
+}
+#team h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+#team h3 + p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#team p {
+  font-weight: 500;
 }
