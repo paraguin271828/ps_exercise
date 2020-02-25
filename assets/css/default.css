@@ -16,7 +16,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: url(img/nyancat.webp) repeat #5f6265 ;
+  background: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .col-1 {
@@ -56,6 +62,17 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-weight: 300;
+}
+
 #wrapper {
+  text-align: left;
+  margin: 0 auto;
   max-width: 960px;
+}
+
+header {
+  color: #fff;
+  background: url('../img/bgk-header.png') no-repeat;
 }
