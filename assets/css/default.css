@@ -181,6 +181,10 @@ header #upper_header {
   background: #00e0d0;
 }
 
+main > section {
+  padding: 70px 0;
+}
+
 #story {
   display: flex;
 }
