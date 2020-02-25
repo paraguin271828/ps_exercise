@@ -73,16 +73,26 @@ h2, h3, h4, h5 {
 
 h2 {
   font-family: 'serif';
+  margin-top: 0;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+button {
+  color: #00e0d0;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 1px solid #00e0d0;
+  background: none;
 }
 
 figure {
@@ -180,6 +190,9 @@ header #upper_header {
   height: 2px;
   background: #00e0d0;
 }
+#stage button {
+  margin-top: 50px;
+}
 
 main > section {
   padding: 70px 0;
@@ -187,4 +200,15 @@ main > section {
 
 #story {
   display: flex;
+}
+#story .image_container {
+  text-align: center;
+}
+#story .image_container img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+#story button {
+  margin-top: 30px;
 }
