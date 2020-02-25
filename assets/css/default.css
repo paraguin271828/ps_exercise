@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%; /* 62.5%: 1rem = 10px */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -87,12 +88,18 @@ ul {
 }
 
 button {
+  cursor: pointer;
   color: #00e0d0;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 15px;
   border: 1px solid #00e0d0;
+  transition: color 500ms ease-out, border 500ms ease-out;
   background: none;
+}
+button:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 figure {
@@ -113,6 +120,8 @@ figure {
 header {
   color: #fff;
   position: relative;
+  background: #3d2f62;
+  z-index: 1;
 }
 .header_bg {
   position: absolute;
@@ -168,6 +177,7 @@ header #upper_header {
   flex-direction: row;
   align-items: center;
   margin-bottom: 150px;
+  z-index: 10;
 }
 
 #stage {
@@ -175,6 +185,7 @@ header #upper_header {
   margin: 0 auto;
   padding-bottom: 200px;
   max-width: 780px;
+  z-index: 10;
 }
 #stage h2 {
   text-transform: capitalize;
@@ -211,4 +222,43 @@ main > section {
 }
 #story button {
   margin-top: 30px;
+  transition: color 1000ms ease-out, border 1000ms ease-out;
+}
+#story button:hover {
+  color: #000;
+  border-color: #000;
+}
+
+#watch {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 200px;
+}
+#watch .watch_bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+  height: 100%;
+  background: url('../img/bgk-middle.png') #3d2f62 no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+#watch p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#watch a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  transition: filter 500ms ease-out;
+}
+#watch a:hover {
+  filter: invert(1);
 }
