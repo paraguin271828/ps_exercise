@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 62.5%: 1rem = 10px */
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: url(img/nyancat.webp) repeat #5f6265 ;
+}
+
+.col-1 {
+  width: 8.3333%;
+}
+.col-2 {
+  width: 16.6666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333%;
+}
+.col-5 {
+  width: 41.6667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-8 {
+  width: 66.6666%;
+}
+.col-7 {
+  width: 58.3333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3333%;
+}
+.col-11 {
+  width: 91.6666%
+}
+.col-12 {
+  width: 100%;
+}
+
+#wrapper {
+  max-width: 960px;
+}
