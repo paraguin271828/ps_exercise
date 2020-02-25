@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto';
   font-size: 1.6rem;
   font-weight: 300;
-  color: #000;
+  color: #413d4b;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -74,6 +74,7 @@ h2, h3, h4, h5 {
 
 h2 {
   font-family: 'serif';
+  color: #413d4b;
   margin-top: 0;
 }
 
@@ -188,6 +189,7 @@ header #upper_header {
   z-index: 10;
 }
 #stage h2 {
+  color: #fff;
   text-transform: capitalize;
   position: relative;
   margin-bottom: 50px;
@@ -261,4 +263,44 @@ main > section {
 }
 #watch a:hover {
   filter: invert(1);
+}
+
+#expertise {
+  text-align: center;
+}
+#expertise h2 + p {
+  font-family: 'serif';
+}
+#expertise h2 + p::after {
+  content: '';
+  display: block;
+  margin: 20px auto 0;
+  width: 50px;
+  height: 2px;
+  background: #c6c4c9;
+}
+
+#expertise_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+#expertise_list li {
+  padding: 30px 40px;
+  border-right: 1px solid #ebebeb;
+}
+#expertise_list li img {
+  transition: filter 500ms ease-in;
+  filter: brightness(0);
+}
+#expertise_list li:hover img {
+  filter: none;
+}
+#expertise_list li:nth-of-type(3n) {
+  border-right: none;
+}
+#expertise_list li:nth-of-type(-n+3) {
+  border-bottom: 1px solid #ebebeb;
 }
