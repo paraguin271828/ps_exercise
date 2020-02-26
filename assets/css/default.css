@@ -92,6 +92,11 @@ ul {
   list-style-type: none;
 }
 
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  display: none;
+}
+
 button {
   cursor: pointer;
   color: #00e0d0;
@@ -478,16 +483,27 @@ footer {
   left: 10px;
 }
 #upper_footer #newsletter_form input {
+  color: #fff;
+  float: left;
   height: 45px;
   border: 1px solid #fff;
   background: none;
 }
 #upper_footer #newsletter_form button {
-  margin: 0;
+  margin: 0 0 0 10px;
   width: 70px;
   height: 45px;
+  transition: filter 250ms ease-in;
   border: none;
   background: rgba(255,255,255,.5) url('../img/svg/paper122.svg') no-repeat center center;
+}
+#upper_footer #newsletter_form button:hover {
+  filter: invert(1);
+}
+#upper_footer #newsletter_form button::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 #lower_footer {
   padding-bottom: 55px;
