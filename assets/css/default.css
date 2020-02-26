@@ -92,8 +92,7 @@ ul {
   list-style-type: none;
 }
 
-input:focus + label,
-input:not(:placeholder-shown) + label {
+form > label {
   display: none;
 }
 
@@ -485,13 +484,15 @@ footer {
 #upper_footer #newsletter_form input {
   color: #fff;
   float: left;
+  padding: 5px;
+  width: 75%;
   height: 45px;
   border: 1px solid #fff;
   background: none;
 }
 #upper_footer #newsletter_form button {
   margin: 0 0 0 10px;
-  width: 70px;
+  width: 20%;
   height: 45px;
   transition: filter 250ms ease-in;
   border: none;
@@ -505,6 +506,13 @@ footer {
   display: block;
   clear: both;
 }
+
+#upper_footer .social ul li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
 #lower_footer {
   padding-bottom: 55px;
   justify-content: space-between;
