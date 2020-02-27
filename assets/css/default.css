@@ -336,13 +336,27 @@ main > section {
   margin: 45px auto 70px;
 }
 #team ul li {
+  position: relative;
   margin: 0 10px;
   width: calc(25% - 20px);
   border: 1px solid #f4f4f6;
 }
 #team .portrait {
-  height: 230px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
   background: #f4f4f6;
+}
+#team .portrait img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #team h2 {
   color: #fff;
